@@ -6,30 +6,32 @@ import '../widgets/page_layout.dart';
 class ResearchPage extends StatelessWidget {
   const ResearchPage({super.key});
 
+  static const _baseUrl = '/portafolio/';
+
   static const _proyectos = [
     _Proyecto(
       Icons.school,
       'Perfil Docente Actual',
       'Análisis del rol y competencias docentes requeridas hoy.',
-      url: 'pdfs/Perfil.pdf',
+      url: '${_baseUrl}pdfs/Perfil.pdf',
     ),
     _Proyecto(
       Icons.flip_to_back,
       'Aula Invertida — MRU',
       'Secuencia didáctica Flipped Classroom para enseñar MRU.',
-      url: 'pdfs/flipped-class-mru.pdf',
+      url: '${_baseUrl}pdfs/flipped-class-mru.pdf',
     ),
     _Proyecto(
       Icons.account_balance,
       'ABC — Resonancia: Puente que oscilaba',
       'Estudio de caso sobre resonancia mecánica en puente real.',
-      url: 'pdfs/abc.pdf',
+      url: '${_baseUrl}pdfs/abc.pdf',
     ),
     _Proyecto(
       Icons.event,
       'Cronograma de Asesorías',
       'Planificación semanal de tutorías para estudiantes de Física.',
-      url: 'pdfs/Cronograma.pdf',
+      url: '${_baseUrl}pdfs/Cronograma.pdf',
     ),
     _Proyecto(
       Icons.mic,
